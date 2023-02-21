@@ -3,33 +3,41 @@
 # Part 1
 
 def sum arr
-  # YOUR CODE HERE
+  sum = 0;
+  array.each { |a| sum+=a }
+  return sum;
 end
 
 def max_2_sum arr
-  # YOUR CODE HERE
+  if arr.length == 0
+    return 0
+    elsif arr.length == 1
+    return arr[0]
+    end
 end
 
 def sum_to_n? arr, n
-  # YOUR CODE HERE
+
 end
 
 # Part 2
 
 def hello(name)
-  # YOUR CODE HERE
+  return "Hello, " + name
 end
 
 def starts_with_consonant? s
-  # YOUR CODE HERE
+  return false if !s or s.length == 0
 end
 
 def binary_multiple_of_4? s
-  # YOUR CODE HERE
+  return true if (/\d+/ =~ s) == 0
+    return false
 end
 
 # Part 3
 
 class BookInStock
-# YOUR CODE HERE
+  attr_accessor :isbn, :price
+  
 end
